@@ -9,6 +9,7 @@ class Listado extends Component {
                 {Object.keys(this.props.gastos ).map(key => (
 
                     <Gasto
+                        key = {key}
                         gasto = {this.props.gastos[key]}
                     />
                 ))}
